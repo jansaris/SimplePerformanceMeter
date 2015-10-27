@@ -2,7 +2,7 @@
 using NLog.Config;
 using NLog.Targets;
 
-namespace SimplePerformanceMeter.Configuration
+namespace SimplePerformanceMeter.Environment
 {
     public class NLog
     {

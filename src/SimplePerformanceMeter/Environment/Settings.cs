@@ -1,4 +1,4 @@
-﻿namespace SimplePerformanceMeter.Configuration
+﻿namespace SimplePerformanceMeter.Environment
 {
     public class Settings : ISettings
     {

@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 using NLog;
+using SimplePerformanceMeter.Environment;
 using SimplePerformanceMeter.Loggers;
 
 namespace SimplePerformanceMeter
@@ -10,17 +11,17 @@ namespace SimplePerformanceMeter
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private readonly string _application;
+        private string _application;
         private readonly IEnumerable<IMonitorLogger> _loggers;
         private readonly int _delay;
 
         private bool _stop;
         private Task _job;
 
-        public Monitor(string application, int delay, IEnumerable<IMonitorLogger> loggers)
+        public Monitor(string application, ISettings settings, IEnumerable<IMonitorLogger> loggers)
         {
             _application = application;
-            _delay = delay;
+            _delay = settings.Delay;
             _loggers = loggers;
         }
 

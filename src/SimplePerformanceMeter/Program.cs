@@ -1,28 +1,31 @@
 ﻿using System;
 using System.Linq;
+using Autofac;
 using NLog;
-using SimplePerformanceMeter.Configuration;
-using SimplePerformanceMeter.Loggers;
+using SimplePerformanceMeter.Environment;
 
 namespace SimplePerformanceMeter
 {
     public class Program
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        private static IContainer _container;
 
         static void Main(string[] args)
         {
             try
             {
-                Configuration.NLog.Configure();
+                _container = Bootstrapper.InitializeContainer();
                 Logger.Info("Welcome");
                 if (args.Length <= 0)
                 {
                     Logger.Error("Use: MemoryMeter.exe <appName>");
                     return;
                 }
-                var monitors = args.Select(CreateMonitor).ToList();
-                monitors.AsParallel().ForAll(m => m.Start());
+                var monitors = args
+                    .Select(CreateMonitor)
+                    .Select(ActivateMonitor)
+                    .ToList();
 
                 Console.ReadLine();
 
@@ -35,11 +38,16 @@ namespace SimplePerformanceMeter
             }
         }
 
-        private static Monitor CreateMonitor(string applicationName)
+        private static Monitor ActivateMonitor(Monitor monitor)
         {
-            var settings = new Settings();
-            var loggers = LoggersFactory.GetActiveLoggers(new Settings());
-            return new Monitor(applicationName, settings.Delay, loggers);
+            monitor.Start();
+            return monitor;
+        }
+
+        private static Monitor CreateMonitor(string app)
+        {
+            var monitor = _container.Resolve<Monitor>(new NamedParameter("application", app));
+            return monitor;
         }
     }
 }

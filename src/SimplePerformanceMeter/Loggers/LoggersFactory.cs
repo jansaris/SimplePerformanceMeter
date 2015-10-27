@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using SimplePerformanceMeter.Configuration;
+using SimplePerformanceMeter.Environment;
 
 namespace SimplePerformanceMeter.Loggers
 {
