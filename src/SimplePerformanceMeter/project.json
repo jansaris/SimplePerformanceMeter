@@ -1,0 +1,28 @@
+{
+    "version": "1.0.0-*",
+    "description": "SimplePerformanceMeter Console Application",
+    "authors": [ "qjsar" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "NLog": "4.2.0",
+        "System.Linq.Parallel": "4.0.0-beta-23019"
+    },
+
+    "commands": {
+        "SimplePerformanceMeter": "SimplePerformanceMeter"
+    },
+
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+                "System.Collections": "4.0.10-beta-23019",
+                "System.Linq": "4.0.0-beta-23019",
+                "System.Threading": "4.0.10-beta-23019",
+                "Microsoft.CSharp": "4.0.0-beta-23019"
+            }
+        }
+    }
+}

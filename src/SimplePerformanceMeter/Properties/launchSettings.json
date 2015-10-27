@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimplePerformanceMeter": {
+      "commandName": "SimplePerformanceMeter",
+      "commandLineArgs": "Notepad"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "locked": false,
+  "version": -9996,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "Microsoft.CSharp/4.0.0-beta-23019": {
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ]
+      },
+      "NLog/4.2.0": {
+        "compile": {
+          "lib/net45/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NLog.dll": {}
+        }
+      },
+      "System.Collections/4.0.10-beta-23019": {
+        "dependencies": {
+          "System.Runtime": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Collections.dll": {}
+        }
+      },
+      "System.Linq/4.0.0-beta-23019": {},
+      "System.Linq.Parallel/4.0.0-beta-23019": {},
+      "System.Runtime/4.0.0-beta-23019": {},
+      "System.Threading/4.0.10-beta-23019": {
+        "dependencies": {
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Threading.Tasks": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Threading.dll": {}
+        }
+      },
+      "System.Threading.Tasks/4.0.0-beta-23019": {}
+    }
+  },
+  "libraries": {
+    "Microsoft.CSharp/4.0.0-beta-23019": {
+      "sha512": "TsYR8ylpBw89cxCTzA9eD8wqLR5u4TnNvUCLU7Qt9TlbxmNM0jPaz80L4N+W81kEoOpchlckGGCTA4JVemmEVA==",
+      "files": [
+        "Microsoft.CSharp.4.0.0-beta-23019.nupkg",
+        "Microsoft.CSharp.4.0.0-beta-23019.nupkg.sha512",
+        "Microsoft.CSharp.nuspec",
+        "lib/dotnet/Microsoft.CSharp.dll",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/win8/_._",
+        "ref/dotnet/Microsoft.CSharp.dll",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/win8/_._"
+      ]
+    },
+    "NLog/4.2.0": {
+      "sha512": "U/cJ48smTdJPOA19RA7rtebrqrM2zZ1jUBh0qCcdw7CO0NN9MeQcndERmObnDIu/hixVj7GbOyGHCqRjpUdNgg==",
+      "files": [
+        "NLog.4.2.0.nupkg",
+        "NLog.4.2.0.nupkg.sha512",
+        "NLog.nuspec",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40/NLog.dll",
+        "lib/net40/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml"
+      ]
+    },
+    "System.Collections/4.0.10-beta-23019": {
+      "sha512": "76/FZ9wYhhU6wdNwrB3NiVJ5lpLZnLhS3dbLCOXOSf8NN3KXPrlcm5f2PUeHSJxgu5nP2H8lGLfshIaWq2qSNQ==",
+      "files": [
+        "System.Collections.4.0.10-beta-23019.nupkg",
+        "System.Collections.4.0.10-beta-23019.nupkg.sha512",
+        "System.Collections.nuspec",
+        "lib/DNXCore50/System.Collections.dll",
+        "lib/net46/_._",
+        "lib/netcore50/System.Collections.dll",
+        "ref/dotnet/System.Collections.dll",
+        "ref/net46/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Collections.dll"
+      ]
+    },
+    "System.Linq/4.0.0-beta-23019": {
+      "sha512": "kw6QeVsZWOKdonnArSWFerSyXCsr2LmGqT9Z2W7HFf7yN09o6O8YLfIALlFnhD4CXgJZYC8ebgMPC6uK9IZfOQ==",
+      "files": [
+        "System.Linq.4.0.0-beta-23019.nupkg",
+        "System.Linq.4.0.0-beta-23019.nupkg.sha512",
+        "System.Linq.nuspec",
+        "lib/dotnet/System.Linq.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.dll",
+        "lib/win8/_._",
+        "ref/dotnet/System.Linq.dll",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.dll",
+        "ref/win8/_._"
+      ]
+    },
+    "System.Linq.Parallel/4.0.0-beta-23019": {
+      "sha512": "ur0syOPcGE0vRIkmCb6LgH0cHa2y3X7NqxOJRc/mYybiRkUixFDGHJcthqGExpK8/JTQUGvXKoLhYuy/4e7xqg==",
+      "files": [
+        "System.Linq.Parallel.4.0.0-beta-23019.nupkg",
+        "System.Linq.Parallel.4.0.0-beta-23019.nupkg.sha512",
+        "System.Linq.Parallel.nuspec",
+        "lib/dotnet/System.Linq.Parallel.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.Parallel.dll",
+        "lib/win8/_._",
+        "ref/dotnet/System.Linq.Parallel.dll",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.Parallel.dll",
+        "ref/win8/_._"
+      ]
+    },
+    "System.Runtime/4.0.0-beta-23019": {
+      "sha512": "BUB/5CSzjDRQlifthFztT1eWmnnb2QCK2WKd0kxAt8ytB+2oXiVqpSvcbtzRsidp8wGdG51fyolfiznodSIX9A==",
+      "files": [
+        "License.rtf",
+        "System.Runtime.4.0.0-beta-23019.nupkg",
+        "System.Runtime.4.0.0-beta-23019.nupkg.sha512",
+        "System.Runtime.nuspec",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "ref/dotnet/System.Runtime.dll",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/win8/_._"
+      ]
+    },
+    "System.Threading/4.0.10-beta-23019": {
+      "sha512": "xJYu7J22Fc4G7pfUlPBYuRj4Rla0VkaqU77SW2DyT/oMq1KQmmR7oQnQ7yq/yig0St17I7rYZYBbSrNbe1l5+g==",
+      "files": [
+        "System.Threading.4.0.10-beta-23019.nupkg",
+        "System.Threading.4.0.10-beta-23019.nupkg.sha512",
+        "System.Threading.nuspec",
+        "lib/DNXCore50/System.Threading.dll",
+        "lib/net46/_._",
+        "lib/netcore50/System.Threading.dll",
+        "ref/dotnet/System.Threading.dll",
+        "ref/net46/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Threading.dll"
+      ]
+    },
+    "System.Threading.Tasks/4.0.0-beta-23019": {
+      "sha512": "frcOMzzaVN9AHhlJRLKOqm9WHws2byLa+CDFUZIQzUWqrpubH0CDtNj1je5lJpD1QDwJBmnXepKUXCwt/wt9Ew==",
+      "files": [
+        "License.rtf",
+        "System.Threading.Tasks.4.0.0-beta-23019.nupkg",
+        "System.Threading.Tasks.4.0.0-beta-23019.nupkg.sha512",
+        "System.Threading.Tasks.nuspec",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "ref/dotnet/System.Threading.Tasks.dll",
+        "ref/net45/_._",
+        "ref/netcore50/System.Threading.Tasks.dll",
+        "ref/win8/_._"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "NLog >= 4.2.0",
+      "System.Linq.Parallel >= 4.0.0-beta-23019"
+    ],
+    "DNX,Version=v4.5.1": [
+      "System.Collections >= 4.0.10-beta-23019",
+      "System.Linq >= 4.0.0-beta-23019",
+      "System.Threading >= 4.0.10-beta-23019",
+      "Microsoft.CSharp >= 4.0.0-beta-23019"
+    ]
+  }
+}
