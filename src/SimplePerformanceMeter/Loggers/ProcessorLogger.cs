@@ -1,12 +1,17 @@
 ﻿using System.Diagnostics;
+using SimplePerformanceMeter.Environment;
 
 namespace SimplePerformanceMeter.Loggers
 {
     public class ProcessorLogger : NLogger
     {
-        public override void Log(Process process)
+        public ProcessorLogger(ISettings settings) : base(settings.Processor)
         {
-            if (!ValidateProcess(process)) return;
+
+        }
+
+        protected override void LogOnValidatedProcess(Process process)
+        {
             Logger.Info($"{process.ProcessName} uses 1%");
         }
     }

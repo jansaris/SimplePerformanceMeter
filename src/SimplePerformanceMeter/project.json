@@ -11,10 +11,18 @@
     "System.Linq.Parallel": "4.0.0",
     "Microsoft.CSharp": "4.0.1-beta-23409",
     "System.Collections": "4.0.11-beta-23409",
-    "System.Linq": "4.0.0-beta-23409",
-    "System.Threading": "4.0.10-beta-23409",
-    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
-    "Autofac": "3.5.2"
+    "System.Linq": "4.0.0",
+    "System.Threading": "4.0.10",
+    "Autofac": "3.5.2",
+    "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+    "Microsoft.Framework.Configuration": "1.0.0-beta5",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta5"
+  },
+
+  "monitor settings": {
+    "delay": 1000,
+    "processor": false,
+    "memory": true
   },
 
   "commands": {

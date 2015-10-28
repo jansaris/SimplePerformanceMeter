@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Autofac;
+using Microsoft.Framework.Runtime;
 using NLog;
 using SimplePerformanceMeter.Environment;
 
@@ -11,11 +12,15 @@ namespace SimplePerformanceMeter
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private static IContainer _container;
 
-        static void Main(string[] args)
+        public Program(IApplicationEnvironment environment)
+        {
+            _container = Bootstrapper.InitializeContainer(environment);
+        }
+
+        public void Main(string[] args)
         {
             try
             {
-                _container = Bootstrapper.InitializeContainer();
                 Logger.Info("Welcome");
                 if (args.Length <= 0)
                 {

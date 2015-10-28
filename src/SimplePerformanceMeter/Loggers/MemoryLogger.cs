@@ -1,13 +1,17 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using SimplePerformanceMeter.Environment;
 
 namespace SimplePerformanceMeter.Loggers
 {
     public class MemoryLogger : NLogger
     {
-        public override void Log(Process process)
+        public MemoryLogger(ISettings settings) : base(settings.Memory)
         {
-            if (!ValidateProcess(process)) return;
+
+        }
+
+        protected override void LogOnValidatedProcess(Process process)
+        {
             var memory = process.PrivateMemorySize64 / 1024 / 1024;
             Logger.Info($"{process.ProcessName} uses {memory}MB");
         }
